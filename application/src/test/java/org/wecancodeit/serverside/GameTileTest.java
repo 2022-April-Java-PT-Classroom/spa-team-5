@@ -16,12 +16,12 @@ public class GameTileTest {
     @Test
     public void shouldReturnTileForGetImage(){
         GameTile underTest = new GameTile("Tile", 1);
-        assertEquals("/GameTiles/Tile", underTest.getImage());
+        assertEquals("/GameTiles/Tile/Tile.jpg", underTest.getImage());
     }
 
     @Test
-    public void shouldReturnTile0ForGetRandomAltImage(){
-        GameTile underTest = new GameTile("Tile", 1);
-        assertEquals("/GameTiles/Tile0", underTest.getRandomAltImage());
+    public void shouldReturnFish0ForGetRandomAltImage(){
+        GameTile underTest = new GameTile("Fish", 1);
+        assertEquals("/GameTiles/Fish/Fish0.jpg", underTest.getRandomAltImage());
     }
 }
