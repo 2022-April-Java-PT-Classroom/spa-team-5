@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-import axios from "axios";
+import Axios from "axios";
 import style from "./style.module.scss";
 
 function Fish() {
+  const [species, setSpecies] = useState([]);
+
   useEffect(() => {
-    axios.get("https://www.fishwatch.gov/api/species").then((response) => {
-      console.log(response.data);
+    Axios.get("https://www.fishwatch.gov/api/species").then((response) => {
+      console.log("Fish:", response.data);
+      setSpecies(response.data);
 
       // const [speciesState, setSpeciesState] = useState({
       //   SpeciesName: "",
