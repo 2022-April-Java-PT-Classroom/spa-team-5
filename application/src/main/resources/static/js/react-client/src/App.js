@@ -7,14 +7,16 @@ import style from "./style.module.scss";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header/>
-      <div className={style.page}>
-      <PageSwitch />
-      <Footer/>
+    <div>
+      <BrowserRouter>
+      <Header />
+      <div className={style.page} >
+        <PageSwitch />
       </div>
-    </BrowserRouter>
-  )
-};
+      <Footer />
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;
