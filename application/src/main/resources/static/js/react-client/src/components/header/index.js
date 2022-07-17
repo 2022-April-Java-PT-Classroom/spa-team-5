@@ -3,6 +3,7 @@ import React from "react";
 import style from './style.module.scss';
 
 const Header = () => (
+ 
     <div className={style.Header}> 
       <h1>JAC Enterprises</h1>
       <ul className={style.navList}>
@@ -13,6 +14,9 @@ const Header = () => (
           <NavLink to='/contact'>Contact</NavLink>
       </ul>
     </div> 
-  )
-  
+
+)
+
+
   export default Header;
+
