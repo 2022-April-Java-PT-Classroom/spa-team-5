@@ -2,22 +2,21 @@ import Adam from '../../assets/Adam.jpg';
 import Joe from '../../assets/Joe.png';
 import React from "react";
 import SamHeroPic from '../../assets/SamHeroPic.jpg';
-import Serena from '../../assets/Serena.jpg';
+import Serena from '../../assets/Serena.JPG';
 import style from "./style.module.scss";
 
 const BioScreen = () => {
     return (
     
-       
-
-        <div className="cards" >
-                  
-            <div className={style.BioScreen} >
-       
-            <div className="Adam" >
-            <img src={Adam} alt='Adam profile pic' />
             
-            <p>
+    <div className={style.BioScreen} >
+       
+       
+            <section className={style.row}>
+            <article className={style.card}>
+                <img src={Adam} alt='Adam profile pic' />
+            
+                 <p>
                 
             I am currently enrolled at We Can Code IT 
             to earn a Certificate in Software Development.
@@ -32,10 +31,10 @@ const BioScreen = () => {
             have great interest in computer hardware and remote 
             control cars.
                 
-            </p>
-            </div>
+                </p>
+            </article>
                  
-            <div className="card" >
+            <article className={style.card}>
             <img src={SamHeroPic} alt='2nd profile pic' />
             
             <p>
@@ -51,9 +50,9 @@ const BioScreen = () => {
             eros ut pellentesque. Duis scelerisque convallis sagittis. 
             
             </p>
-            </div>
+            </article>
                  
-            <div className="card" >
+            <article className={style.card}>
             <img src={Joe} alt='3rd profile pic' />
             
             <p>
@@ -66,9 +65,11 @@ const BioScreen = () => {
             forward-facing, as it is vital and integral to our daily lives.
                 
             </p>
-            </div>
+            </article>
+            </section>
             
-            <div className="card" >
+            <section className={style.row}>
+            <article className={style.card}>
                 
             <img src={Serena} alt='4th profile pic' />
             
@@ -85,10 +86,9 @@ const BioScreen = () => {
             eros ut pellentesque. Duis scelerisque convallis sagittis. 
             
             </p>
-            </div>
-            
-            <div className="card" >
-            
+            </article>
+            <article className={style.card}>
+                
             <img src={Adam} alt='5th profile pic' />
             
             <p>
@@ -104,9 +104,9 @@ const BioScreen = () => {
             eros ut pellentesque. Duis scelerisque convallis sagittis. 
             
             </p>
-            </div>
+            </article>
             
-            <div className="card" >
+            <article className={style.card}>
             
             <img src={Adam} alt='6th profile pic' />
             
@@ -123,8 +123,9 @@ const BioScreen = () => {
             eros ut pellentesque. Duis scelerisque convallis sagittis. 
             
             </p>
-            </div>
+            </article>
             
+            <article className={style.card}>
             <img src={Adam} alt='7th profile pic' />
             
             <p>
@@ -142,8 +143,10 @@ const BioScreen = () => {
             </p>
                  
             
-            </div>
+            </article>
+            </section>
          </div>
+      
             
         );
 }
