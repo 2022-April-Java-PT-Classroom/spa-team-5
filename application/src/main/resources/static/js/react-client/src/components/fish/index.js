@@ -1,34 +1,20 @@
-import React, { useEffect, useState } from "react";
+const Fish = () => {
+  const Fish = document.querySelector("#fish");
 
-import Axios from "axios";
-import style from "./style.module.scss";
+  fetch("https://www.fishwatch.gov/api/species", {
+    mode: "cors",
+    credentials: "include",
+  })
+    .then((response) => response.json())
+    .then((jsonData) => {
+      const species = jsonData.results;
 
-function Fish() {
-  const [species, setSpecies] = useState([]);
-
-  useEffect(() => {
-    Axios.get("https://www.fishwatch.gov/api/species").then((response) => {
-      console.log("Fish:", response.data);
-      setSpecies(response.data);
-
-      // const [speciesState, setSpeciesState] = useState({
-      //   SpeciesName: "",
-      //   ScientificName: "",
-      //   ImageGallery: {
-      //     src: "",
-      //     alt: "",
-      //   },
-      // });
-
-      // const handleChange = (e) => {
-      //   const value = e.target.value;
-      //   setSpeciesState({
-      //     ...speciesState,
-      //     [e.target.SpeciesName]: value,
-      //   });
-      // };
+      species.forEach((fish) => {
+        const speciesNameElem = document.createElement("p");
+        speciesNameElem.innerText = fish.speciesName;
+        // app.appendChild(speciesNameElem);
+      });
     });
-  });
-}
+};
 
 export default Fish;
