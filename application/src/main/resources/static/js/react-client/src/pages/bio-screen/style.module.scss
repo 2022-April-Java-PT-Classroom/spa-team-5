@@ -1,36 +1,10 @@
 .cards {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
-    // height: 60vh;
-    // width: 60vh;
-    display:grid;
-    justify-content: center;
-
-    grid-template-columns: 80px;
-    grid-template-rows: 200px;
-    margin: 1em 1em;
-    border-radius: 12px;
-    padding: 0;
-
-}
-
-p {
-    margin:auto;
-    width: 300px;
-    height: 300px;
-}
-
-img { 
-
-    display: grid;
-    gap: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 400px;
 }
+
 
 
 

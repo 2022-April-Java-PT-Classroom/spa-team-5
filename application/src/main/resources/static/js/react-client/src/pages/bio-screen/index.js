@@ -1,15 +1,20 @@
 import Adam from '../../assets/Adam.jpg';
+import Joe from '../../assets/Joe.png';
 import React from "react";
-import style from './style.module.scss';
+import SamHeroPic from '../../assets/SamHeroPic.jpg';
+import Serena from '../../assets/Serena.jpg';
+import style from "./style.module.scss";
 
 const BioScreen = () => {
     return (
+    
+       
+
         <div className="cards" >
-            <h2>This is the Bio Screen Page</h2>
+                  
+            <div className={style.BioScreen} >
        
-            <div className={style.page} >
-       
-            <div className="card" >
+            <div className="Adam" >
             <img src={Adam} alt='Adam profile pic' />
             
             <p>
@@ -31,7 +36,7 @@ const BioScreen = () => {
             </div>
                  
             <div className="card" >
-            <img src={Adam} alt='2nd profile pic' />
+            <img src={SamHeroPic} alt='2nd profile pic' />
             
             <p>
                 
@@ -49,26 +54,23 @@ const BioScreen = () => {
             </div>
                  
             <div className="card" >
-            <img src={Adam} alt='3rd profile pic' />
+            <img src={Joe} alt='3rd profile pic' />
             
             <p>
                     
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Cras eleifend ultricies turpis a dignissim. Donec sit 
-            amet accumsan orci. Fusce et magna facilisis nibh vestibulum 
-            pretium vitae id augue. Etiam at viverra orci. Praesent rutrum
-            purus nec faucibus varius. Praesent est erat, rutrum eget
-            dictum vitae, mattis eget leo. Integer dictum ultrices blandit.
-            Aliquam sed ipsum viverra, molestie metus quis, elementum ex.
-            Aenean scelerisque sodales bibendum. Aliquam rutrum euismod
-            eros ut pellentesque. Duis scelerisque convallis sagittis. 
+            I have a passion and a mind for efficiency in the flow of commodities across
+            the nation, and now for the flow of information across the web: from the actual
+            highways, to the information super-highway. An idyllic world is one where the
+            customer experience is attractive and user-friendly, with the convenience of both
+            mobile applications and the web. Technology should continue to be as accessible and
+            forward-facing, as it is vital and integral to our daily lives.
                 
             </p>
             </div>
             
             <div className="card" >
                 
-            <img src={Adam} alt='4th profile pic' />
+            <img src={Serena} alt='4th profile pic' />
             
             <p>
                 
@@ -141,7 +143,8 @@ const BioScreen = () => {
                  
             
             </div>
-            </div>
+         </div>
+            
         );
 }
 
