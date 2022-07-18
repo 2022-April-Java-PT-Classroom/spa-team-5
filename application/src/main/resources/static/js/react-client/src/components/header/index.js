@@ -2,8 +2,9 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import style from './style.module.scss';
 
-const Header = () => (
-    <div className={style.Header}> 
+const Header = () => {
+  return (
+    <div className={style.header}> 
       <h1>JAC Enterprises</h1>
       <ul className={style.navList}>
           <NavLink to='/'>Home</NavLink>
@@ -12,7 +13,8 @@ const Header = () => (
           <NavLink to='/scores'>Scores</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
       </ul>
-    </div> 
-  )
+    </div>
+  );
+}
   
-  export default Header;
+export default Header;

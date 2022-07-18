@@ -1,7 +1,8 @@
 import React from "react";
 import style from './style.module.scss';
 
-const Footer = () => (
+const Footer = () => {
+    return (
     <div className={style.footer}>
     <small>&copy; WCCI 2022 Team 5</small>
     <ul className={style.socialList}>
@@ -9,6 +10,7 @@ const Footer = () => (
         <li>LinkedIn</li>
     </ul>
     </div>
-    )
+    );
+}
 
 export default Footer;

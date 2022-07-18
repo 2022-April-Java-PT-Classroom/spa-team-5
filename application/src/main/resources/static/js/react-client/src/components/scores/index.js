@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import axios from 'axios';
-import style from './style.module.scss'
+import style from './style.module.scss';
 
 const Scores = ({ users }) => {
 
@@ -17,7 +17,9 @@ const Scores = ({ users }) => {
         const value = e.target.value;
         setScoreState({
             ...scoreState,
-            [e.target.value]: value
+            [e.target.userName]: value,
+            [e.target.userCountry]: value,
+            [e.target.userScore]: value
         });
     };
 
@@ -60,15 +62,29 @@ const Scores = ({ users }) => {
 
     return (
         <div className={style.userForm}>
-            <form onSumbit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="name"
                     value={scoreState.name}
                     onChange={handleChange}
-                    placeholder='Enter name/country/score of user'
-                    />
-                    <button type="submit">Add User</button>
+                    placeholder='Enter name'
+                />
+                <input
+                    type="text"
+                    name="country"
+                    value={scoreState.country}
+                    onChange={handleChange}
+                    placeholder='Enter country'
+                />
+                <input
+                    type="number"
+                    name="score"
+                    value={scoreState.score}
+                    onChange={handleChange}
+                    placeholder='Enter score'
+                />
+                <button type="submit">Submit Score</button>
             </form>
             <h3>All Users</h3>
             <div className={style.usersContainer}>

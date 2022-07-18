@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf610c90-65a4-4acc-aa43-825cce521627" name="Changes" comment="" />
+    <list default="true" id="bf610c90-65a4-4acc-aa43-825cce521627" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/static/js/react-client/src/components/scores/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/static/js/react-client/src/components/scores/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
