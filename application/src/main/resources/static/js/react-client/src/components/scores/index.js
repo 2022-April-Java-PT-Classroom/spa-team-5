@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import style from './style.module.scss';
 
-const Scores = ({ users }) => {
+const Scores = ({ users, setCurrentUsers }) => {
 
     const [scoresState, setScoresState] = useState(users);
 
@@ -13,13 +13,27 @@ const Scores = ({ users }) => {
         userScore: ""
     });
 
-    const handleChange = (e) => {
+    const handleNameChange = (e) => {
         const value = e.target.value;
         setScoreState({
             ...scoreState,
-            [e.target.userName]: value,
-            [e.target.userCountry]: value,
-            [e.target.userScore]: value
+            [e.target.name]: value
+        });
+    };
+
+    const handleCountryChange = (e) => {
+        const value = e.target.value;
+        setScoreState({
+            ...scoreState,
+            [e.target.name]: value
+        });
+    };
+
+    const handleScoreChange = (e) => {
+        const value = e.target.value;
+        setScoreState({
+            ...scoreState,
+            [e.target.name]: value
         });
     };
 
@@ -36,6 +50,7 @@ const Scores = ({ users }) => {
             console.log(response.status);
             console.log('DATA', response.data);
             setScoresState(response.data);
+            setCurrentUsers(response.data);
         });
     };
 
@@ -67,21 +82,21 @@ const Scores = ({ users }) => {
                     type="text"
                     name="name"
                     value={scoreState.name}
-                    onChange={handleChange}
+                    onChange={handleNameChange}
                     placeholder='Enter name'
                 />
                 <input
                     type="text"
                     name="country"
                     value={scoreState.country}
-                    onChange={handleChange}
+                    onChange={handleCountryChange}
                     placeholder='Enter country'
                 />
                 <input
                     type="number"
                     name="score"
                     value={scoreState.score}
-                    onChange={handleChange}
+                    onChange={handleScoreChange}
                     placeholder='Enter score'
                 />
                 <button type="submit">Submit Score</button>

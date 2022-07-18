@@ -49,7 +49,7 @@ const ScoresScreen = () => {
             <div className={style.form__container}>
                 <section className={style.userList}>
                     {loadingUsers ? <h3>Loading . . .</h3> :
-                        <Scores users={users} />
+                        <Scores users={users} setCurrentUsers={setCurrentUsers} />
                     }
                 </section>
             </div>
