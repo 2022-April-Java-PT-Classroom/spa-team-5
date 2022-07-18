@@ -8,7 +8,7 @@ const Header = () => (
       <ul className={style.navList}>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/bios'>Bios</NavLink>
-          <NavLink to='/books'>Books</NavLink>
+          <NavLink to='/books'>Activities</NavLink>
           <NavLink to='/scores'>Scores</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
       </ul>
