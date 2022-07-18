@@ -3,6 +3,7 @@ package org.wecancodeit.serverside;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.wecancodeit.serverside.models.UserName;
+import org.wecancodeit.serverside.repositories.FishRepository;
 import org.wecancodeit.serverside.repositories.UserNameRepository;
 
 import javax.annotation.Resource;
@@ -12,6 +13,7 @@ public class Populator implements CommandLineRunner {
 
     @Resource
     private UserNameRepository userNameRepository;
+    private FishRepository fishRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -26,4 +28,5 @@ public class Populator implements CommandLineRunner {
 
 
     }
+
 }
