@@ -66,9 +66,7 @@ const BioScreen = () => {
                 
             </p>
             </article>
-            </section>
             
-            <section className={style.row}>
             <article className={style.card}>
                 
             <img src={Serena} alt='4th profile pic' />
@@ -87,6 +85,10 @@ const BioScreen = () => {
             
             </p>
             </article>
+            </section>
+            
+            <section className={style.row}>
+                
             <article className={style.card}>
                 
             <img src={Adam} alt='5th profile pic' />
