@@ -10,13 +10,6 @@ import SamHeroPic from '../../assets/SamHeroPic.jpg';
 import Serena from '../../assets/Serena.JPG';
 import style from "./style.module.scss";
 
-// // import style from 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-// <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-// <link rel="stylesheet" type="text/css" href="./style.css">
-// <link rel="preconnect" href="https://fonts.googleapis.com">
-// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-// <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
-
 const BioScreen = () => {
     return (
     
@@ -161,20 +154,30 @@ const BioScreen = () => {
             </article>
             
             <article className={style.card}>
-            <h3>CM Rimal</h3>
+            <h3>Chuda Rimal</h3>
             <img src={CM_Rimal} alt='7th profile pic' />
+            <FontAwesomeIcon className={style.icon} icon="fa-brands fa-github-square" 
+            href="https://github.com/cmsrimsson" />
+
+            <FontAwesomeIcon className={style.icon} icon="fa-regular fa-address-card" 
+            href="https://cmsrimsson.github.io/" />
+
+            <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
+            href="https://www.linkedin.com/in/chuda-rimal-318b33201/" />
+
             
             <p>
                 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Cras eleifend ultricies turpis a dignissim. Donec sit 
-            amet accumsan orci. Fusce et magna facilisis nibh vestibulum 
-            pretium vitae id augue. Etiam at viverra orci. Praesent rutrum
-            purus nec faucibus varius. Praesent est erat, rutrum eget
-            dictum vitae, mattis eget leo. Integer dictum ultrices blandit.
-            Aliquam sed ipsum viverra, molestie metus quis, elementum ex.
-            Aenean scelerisque sodales bibendum. Aliquam rutrum euismod
-            eros ut pellentesque. Duis scelerisque convallis sagittis. 
+            Hello, this is Chuda Rimal. I am a Full-Stack web developer and
+            mostly I am passionate on web coding. I’m quite expert in using
+            coding and markuplanguages like:
+            Java • Spring • Thymeleaf • JavaScript • MVC • HTML •
+            CSS • TDD • Agile (Scrum) • Object Oriented Programming (OOP) •
+            JSON • REST APIs • Responsive Design / Mobile • Relational Databases
+            • Source Control / GitHub.
+            Highly motivated and efficient and quick learner  reskilling to switch careers
+            into software development. Consistently recognized for superior  problem-solving
+            skills, strong work ethic and passion for serving others at Amazon.
             
             </p>
                  
