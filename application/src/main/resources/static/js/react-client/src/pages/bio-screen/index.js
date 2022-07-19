@@ -22,7 +22,7 @@ const BioScreen = () => {
                 <h3>Adam Ackley</h3>
                 <img src={Adam} alt='Adam profile pic' />
                             
-            <FontAwesomeIcon className={style.icon} icon="fa-brands fa-github-square" 
+            <FontAwesomeIcon className={style.icon} icon="fa-github-square" 
             href="https://github.com/ackley787" />
 
             <FontAwesomeIcon className={style.icon} icon="fa-regular fa-address-card" 
@@ -30,7 +30,8 @@ const BioScreen = () => {
 
             <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
             href="https://linkedin.com/in/adam-ackley78" />
-
+            
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                  
                  <p>
                 
@@ -58,7 +59,7 @@ const BioScreen = () => {
             href="https://github.com/samleivadev" />
 
             <FontAwesomeIcon className={style.icon} icon="fa-regular fa-address-card" 
-            href="https://samleivadev.github.io/" />
+            href="https://samleivadev.github.io/profile/" />
 
             <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
             href="https://www.linkedin.com/in/samuelleiva/" />
