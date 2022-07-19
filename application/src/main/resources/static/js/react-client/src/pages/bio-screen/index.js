@@ -54,6 +54,15 @@ const BioScreen = () => {
             <h3>Samuel Leiva</h3>
             <img src={SamHeroPic} alt='2nd profile pic' />
             
+            <FontAwesomeIcon className={style.icon} icon="fa-brands fa-github-square" 
+            href="https://github.com/samleivadev" />
+
+            <FontAwesomeIcon className={style.icon} icon="fa-regular fa-address-card" 
+            href="https://samleivadev.github.io/" />
+
+            <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
+            href="https://www.linkedin.com/in/samuelleiva/" />
+            
             <p>
                 
             Hello! My name is Samuel and I enjoy creating things
