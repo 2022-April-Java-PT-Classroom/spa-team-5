@@ -1,9 +1,21 @@
+import { brands, regular, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 import Adam from '../../assets/Adam.jpg';
+import CM_Rimal from '../../assets/CM Rimal.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import JamieBarr from '../../assets/JamieBarr.jpg';
 import Joe from '../../assets/Joe.png';
 import React from "react";
 import SamHeroPic from '../../assets/SamHeroPic.jpg';
 import Serena from '../../assets/Serena.JPG';
 import style from "./style.module.scss";
+
+// // import style from 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+// <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+// <link rel="stylesheet" type="text/css" href="./style.css">
+// <link rel="preconnect" href="https://fonts.googleapis.com">
+// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+// <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
 
 const BioScreen = () => {
     return (
@@ -14,8 +26,19 @@ const BioScreen = () => {
        
             <section className={style.row}>
             <article className={style.card}>
+                <h3>Adam Ackley</h3>
                 <img src={Adam} alt='Adam profile pic' />
-            
+                            
+            <FontAwesomeIcon className={style.icon} icon="fa-brands fa-github-square" 
+            href="https://github.com/ackley787" />
+
+            <FontAwesomeIcon className={style.icon} icon="fa-regular fa-address-card" 
+            href="https://ackley787.github.io/" />
+
+            <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
+            href="https://linkedin.com/in/adam-ackley78" />
+
+                 
                  <p>
                 
             I am currently enrolled at We Can Code IT 
@@ -35,24 +58,34 @@ const BioScreen = () => {
             </article>
                  
             <article className={style.card}>
+            <h3>Samuel Leiva</h3>
             <img src={SamHeroPic} alt='2nd profile pic' />
             
             <p>
                 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Cras eleifend ultricies turpis a dignissim. Donec sit 
-            amet accumsan orci. Fusce et magna facilisis nibh vestibulum 
-            pretium vitae id augue. Etiam at viverra orci. Praesent rutrum
-            purus nec faucibus varius. Praesent est erat, rutrum eget
-            dictum vitae, mattis eget leo. Integer dictum ultrices blandit.
-            Aliquam sed ipsum viverra, molestie metus quis, elementum ex.
-            Aenean scelerisque sodales bibendum. Aliquam rutrum euismod
-            eros ut pellentesque. Duis scelerisque convallis sagittis. 
+            Hello! My name is Samuel and I enjoy creating things
+            that live on the internet. I am a Full-Stack Software 
+            Developer specializing in building (and occasionally 
+            designing) exceptional digital experiences. Currently, 
+            I’m focused on building accessible, human-centered products
+            My focus these days is building accessible, inclusive 
+            products and digital experiences at Lab275 for a variety
+            of clients. I also recently creating a DownTime tracker 
+            for Amazon warehouses using Java for Back-End and React 
+            JS for the Front-End.
+            
+            ToolBox:
+            JavaScript (ES6+)
+            Java
+            React
+            Node.js
+            WordPress
             
             </p>
             </article>
                  
             <article className={style.card}>
+            <h3>Joe Buckley</h3>
             <img src={Joe} alt='3rd profile pic' />
             
             <p>
@@ -68,7 +101,7 @@ const BioScreen = () => {
             </article>
             
             <article className={style.card}>
-                
+            <h3>Serena Howard</h3>
             <img src={Serena} alt='4th profile pic' />
             
             <p>
@@ -90,7 +123,7 @@ const BioScreen = () => {
             <section className={style.row}>
                 
             <article className={style.card}>
-                
+            <h3>Kevin Pak</h3>
             <img src={Adam} alt='5th profile pic' />
             
             <p>
@@ -109,8 +142,8 @@ const BioScreen = () => {
             </article>
             
             <article className={style.card}>
-            
-            <img src={Adam} alt='6th profile pic' />
+            <h3>Jamie Barr</h3>
+            <img src={JamieBarr} alt='6th profile pic' />
             
             <p>
                 
@@ -128,7 +161,8 @@ const BioScreen = () => {
             </article>
             
             <article className={style.card}>
-            <img src={Adam} alt='7th profile pic' />
+            <h3>CM Rimal</h3>
+            <img src={CM_Rimal} alt='7th profile pic' />
             
             <p>
                 
