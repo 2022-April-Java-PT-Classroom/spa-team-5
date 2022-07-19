@@ -5,42 +5,34 @@
     margin: 0;
     box-sizing: border-box;
     
-    
-
 }
 
 .Header {
     display:flex; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    padding:0 2em;
+    height: auto;
+    padding-top: 10px;
     background-color: white;
-    color:rgb(38, 30, 86)
+    color:rgb(38, 30, 86);
+    font-family: "Audiowide", sans-serif;
 }
 
 .navList a{
     list-style: none;
     display: inline-block;
-    margin: 0 20px; 
+    margin:40px; 
     position: relative;
     text-decoration: none;
-    color:var(--orange);
     text-transform: uppercase;
     
 }
 
-// .navList a:after{
-//     height: 2px;
-//     width: 0%;
-//     background: rgb(0, 153, 255);
-//     position: absolute;
-//     left: 0;
-//     bottom: -10px;
-//     transition: 0.5s;
-// }
-
-.navList a:hover::after{
-    width: 100%;
-    color: var(--green);
+.navList a:hover{
+        color: orange;
+    
 }
+
+
+
