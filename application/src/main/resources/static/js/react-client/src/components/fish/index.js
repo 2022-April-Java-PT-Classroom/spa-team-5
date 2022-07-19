@@ -1,20 +1,35 @@
+import React, { useState } from "react";
+
+import axios from "axios";
+import style from "./style.module.scss";
+
 const Fish = () => {
-  const Fish = document.querySelector("#fish");
+  console.log(Fish);
 
-  fetch("https://www.fishwatch.gov/api/species", {
-    mode: "cors",
-    credentials: "include",
-  })
-    .then((response) => response.json())
-    .then((jsonData) => {
-      const species = jsonData.results;
+  const [fishState, setFish] = useState({
+    name: "",
+    isSelected: false,
+  });
 
-      species.forEach((fish) => {
-        const speciesNameElem = document.createElement("p");
-        speciesNameElem.innerText = fish.speciesName;
-        // app.appendChild(speciesNameElem);
-      });
+  const handleChange = (e) => {
+    const value = e / EventTarget.value;
+    setFish({
+      ...fishState,
+      [e.target.name]: value,
     });
-};
+  };
 
-export default Fish;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const userData = {
+      name: fishState.name,
+      isSelected: false,
+    };
+
+    axios.post("", userData).then((response) => {
+      console.log(response.status);
+      console.log(response.data);
+    });
+  };
+};
