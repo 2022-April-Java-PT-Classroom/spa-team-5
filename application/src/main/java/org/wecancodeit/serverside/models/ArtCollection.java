@@ -29,10 +29,13 @@ public class ArtCollection {
 
     }
 
-    public ArtCollection(Long id, String name, String description, String image) {
-        this.id = id;
+    public ArtCollection(String name, String description, String image) {
+
         this.name = name;
         this.description = description;
         this.image = image;
+    }
+
+    public void save(ArtCollection art1) {
     }
 }

@@ -21,11 +21,12 @@ public class ArtController {
   public Collection<ArtCollection> getArtCollection() {
     return (Collection<ArtCollection>) artRepo.findAll();
   }
-  
+
   @PostMapping("/api/arts")
   public Collection<ArtCollection> addArtCollection(@RequestBody String body) throws JSONException{
     JSONObject newArtCollection = new JSONObject(body);
     String addArtName = newArtCollection.getString("name");
+
     return (Collection<ArtCollection>) artRepo.findAll();
   }
 
