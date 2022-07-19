@@ -21,4 +21,19 @@ import style from "./style.module.scss";
 
 };
 
+const App = () => {
+
+  return (
+    <div>
+      <BrowserRouter>
+      <Header />
+      <div className={style.page} >
+        <PageSwitch />
+      </div>
+      <Footer />
+      </BrowserRouter>
+    </div>
+  );
+}
+
 export default App;

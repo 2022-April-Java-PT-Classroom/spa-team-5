@@ -7,7 +7,7 @@ const HomeScreen = () => {
         <div>
             <div id="fish></div>
         </div>
-    )
+    );
 }
 
 export default HomeScreen;
