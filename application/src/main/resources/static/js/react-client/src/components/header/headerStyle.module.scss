@@ -7,22 +7,27 @@
     
 }
 
-.Header {
+.header {
+    background-color: red;
     display:flex; 
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: auto;
-    padding-top: 10px;
-    background-color: white;
-    color:rgb(38, 30, 86);
     // font-family: "Audiowide", sans-serif;
+  
 }
 
 .title {
-    position: fixed;
+    // background-color: red;
     display:flex; 
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+
+}
+h1 {
+    background-color: red;
+    display:flex; 
+    justify-content: center;
     align-items: center;
     // font-family: "Audiowide", sans-serif;
 
@@ -34,7 +39,7 @@
     margin:40px; 
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import style from "./style.module.scss"
+import style from "./bookStyle.module.scss"
 
 export default function App() {
   const [collections, setCollections] = useState([]);

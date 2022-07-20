@@ -6,7 +6,7 @@ import React from "react";
 import SamHeroPic from '../../assets/SamHeroPic.jpg';
 import Serena from '../../assets/Serena.JPG';
 import SithLord from '../../assets/SithLord.jpg';
-import style from "./style.module.scss";
+import style from "./bioStyle.module.scss";
 
 const BioScreen = () => {
     return (

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Axios from 'axios';
 import Scores from '../../components/scores';
-import style from './style.module.scss';
+import style from './scoresStyle.module.scss';
 
 const ScoresScreen = () => {
 

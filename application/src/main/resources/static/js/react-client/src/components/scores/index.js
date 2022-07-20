@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import axios from 'axios';
-import style from './style.module.scss';
+import style from './scoresStyle.module.scss';
 
 const Scores = ({ users, setCurrentUsers }) => {
 

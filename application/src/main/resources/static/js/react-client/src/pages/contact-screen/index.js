@@ -1,4 +1,5 @@
 import React from "react";
+import style from './contactStyle.module.scss';
 
 const ContactScreen = () => {
     return (

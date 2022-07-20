@@ -1,4 +1,5 @@
 import React from "react";
+import style from './homeStyle.module.scss';
 
 const HomeScreen = () => {
     return (
