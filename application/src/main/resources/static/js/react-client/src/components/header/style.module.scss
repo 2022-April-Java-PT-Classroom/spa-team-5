@@ -19,6 +19,14 @@
     font-family: "Audiowide", sans-serif;
 }
 
+.title {
+    display:flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+
+}
+
 .navList a{
     list-style: none;
     display: inline-block;
