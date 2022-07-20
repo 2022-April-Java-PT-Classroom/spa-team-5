@@ -1,9 +1,12 @@
+import ActivitiesAPI from '../../components/kidsActivitiesAPI/activities.js'
+import BooksAPI from "../../components/BooksApi/booksAPI";
 import React from "react";
+import style from './style.module.scss'
 
 const BooksScreen = () => {
     return (
-        <div>
-            <h2>This is the Favorite Books Page</h2>
+        <div className={style.booksStyle}>
+            <ActivitiesAPI /><BooksAPI/>
         </div>
     )
 }
