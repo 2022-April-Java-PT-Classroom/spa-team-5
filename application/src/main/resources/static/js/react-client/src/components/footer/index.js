@@ -4,7 +4,7 @@ import style from './footerStyle.module.scss';
 const Footer = () => {
     return (
     <div className={style.footer}>
-    <small>&copy; WCCI 2022 Team 5</small>
+    <small>&copy; WCCI 2022 Team 5 - The Dark Side</small>
     <ul className={style.socialList}>
         <li>GitHub</li>
         <li>LinkedIn</li>
