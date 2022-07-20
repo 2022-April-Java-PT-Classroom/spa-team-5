@@ -7,34 +7,43 @@
     
 }
 
-.Header {
+.header {
+    background-color: #008998;
     display:flex; 
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: auto;
-    padding-top: 10px;
-    background-color: white;
-    color:rgb(38, 30, 86);
     // font-family: "Audiowide", sans-serif;
+  
 }
 
 .title {
-    position: fixed;
+    // background-color: red;
     display:flex; 
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+
+}
+h1 {
+    background-color: #008998;
+    color: white;
+    display:flex; 
+    justify-content: center;
     align-items: center;
     // font-family: "Audiowide", sans-serif;
 
 }
 
 .navList a{
+    color: white;
     list-style: none;
     display: inline-block;
-    margin:40px; 
+    margin:40px;
+    margin-left: 3em; 
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 30px;
+    // text-transform: uppercase;
     
 }
 

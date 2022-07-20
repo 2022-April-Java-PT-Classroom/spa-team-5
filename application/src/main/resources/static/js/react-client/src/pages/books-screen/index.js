@@ -1,7 +1,7 @@
 import ActivitiesAPI from '../../components/kidsActivitiesAPI/activities.js'
 import BooksAPI from "../../components/BooksApi/booksAPI";
 import React from "react";
-import style from './style.module.scss'
+import style from './bookStyle.module.scss'
 
 const BooksScreen = () => {
     return (

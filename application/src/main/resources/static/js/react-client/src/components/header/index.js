@@ -1,14 +1,17 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import style from './style.module.scss';
+import style from './headerStyle.module.scss';
 
 const Header = () => {
   return (
-    <div className={style.header}> 
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"></link>
-
+    <header className={style.header}>
+      {/* <div className={style.section}> */}
+      <title className={style.title}>
       <h1 className={style.title}>JAC Enterprises</h1>
+      </title>
+      
+    
+      <nav className={style.navList}>
       <ul className={style.navList}>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/bios'>Bios</NavLink>
@@ -16,8 +19,9 @@ const Header = () => {
           <NavLink to='/scores'>Scores</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
       </ul>
-
-    </div>
+      </nav>
+   {/* </div> */}
+      </header>
   );
 }
   

@@ -3,7 +3,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import PageSwitch from "./components/app-router";
 import React from "react";
-import style from "./style.module.scss";
+import style from "./appStyle.module.scss";
 
 const App = () => {
 
