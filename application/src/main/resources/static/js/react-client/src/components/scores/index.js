@@ -80,21 +80,21 @@ const Scores = ({ users, setCurrentUsers }) => {
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    name="name"
+                    name="userName"
                     value={scoreState.name}
                     onChange={handleNameChange}
                     placeholder='Enter name'
                 />
                 <input
                     type="text"
-                    name="country"
+                    name="userCountry"
                     value={scoreState.country}
                     onChange={handleCountryChange}
                     placeholder='Enter country'
                 />
                 <input
                     type="number"
-                    name="score"
+                    name="userScore"
                     value={scoreState.score}
                     onChange={handleScoreChange}
                     placeholder='Enter score'
