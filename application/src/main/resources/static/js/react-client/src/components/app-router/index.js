@@ -6,6 +6,7 @@ import ContactScreen from "../../pages/contact-screen";
 import HomeScreen from "../../pages/home-screen";
 import React from "react";
 import ScoresScreen from "../../pages/scores-screen";
+import ArtCollection from "../../pages/art-collection";
 
 const PageSwitch = () => (
     <Switch>
@@ -14,6 +15,7 @@ const PageSwitch = () => (
         <Route exact path={'/scores'} component = {ScoresScreen}/>
         <Route exact path={'/contact'} component = {ContactScreen}/>
         <Route exact path={'/books'} component = {BooksScreen}/>
+        <Route exact path={'/art'} component = {ArtCollection}/>
     </Switch>
 )
 
