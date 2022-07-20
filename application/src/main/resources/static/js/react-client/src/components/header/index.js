@@ -13,6 +13,7 @@ const Header = () => (
           <NavLink to='/bios'>Bios</NavLink>
           <NavLink to='/books'>Activities</NavLink>
           <NavLink to='/scores'>Scores</NavLink>
+          <NavLink to='/art'>Art</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
       </ul>
       

@@ -16,6 +16,7 @@ const PageSwitch = () => (
         <Route exact path={'/contact'} component = {ContactScreen}/>
         <Route exact path={'/books'} component = {BooksScreen}/>
         <Route exact path={'/art'} component = {ArtCollection}/>
+        
     </Switch>
 )
 
