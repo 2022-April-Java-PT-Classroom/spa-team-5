@@ -20,18 +20,18 @@ const BioScreen = () => {
             <section className={style.row}>
             <article className={style.card}>
                 <h3>Adam Ackley</h3>
-                <img src={Adam} alt='Adam profile pic' />
+                <img className={style.card} src={Adam} alt='Adam profile pic' />
                             
-            <FontAwesomeIcon className={style.icon} icon="fa-github-square" 
+            <FontAwesomeIcon className={style.icon} icon="fa brands fa-github-square" 
             href="https://github.com/ackley787" />
 
             <FontAwesomeIcon className={style.icon} icon="fa-regular fa-address-card" 
             href="https://ackley787.github.io/" />
 
-            <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
+            <FontAwesomeIcon className={style.icon} icon="fa brands fa-linkedin-square" 
             href="https://linkedin.com/in/adam-ackley78" />
-{/*             
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> */}
+            
+            {/* <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> */}
                  
                  <p>
                 
@@ -53,7 +53,7 @@ const BioScreen = () => {
                  
             <article className={style.card}>
             <h3>Samuel Leiva</h3>
-            <img src={SamHeroPic} alt='2nd profile pic' />
+            <img className={style.card} src={SamHeroPic} alt='2nd profile pic' />
             
             <FontAwesomeIcon className={style.icon} icon="fa-brands fa-github-square" 
             href="https://github.com/samleivadev" />
@@ -89,7 +89,7 @@ const BioScreen = () => {
                  
             <article className={style.card}>
             <h3>Joe Buckley</h3>
-            <img src={Joe} alt='3rd profile pic' />
+            <img className={style.card} src={Joe} alt='3rd profile pic' />
             
             <p>
                     
@@ -105,7 +105,7 @@ const BioScreen = () => {
             
             <article className={style.card}>
             <h3>Serena Howard</h3>
-            <img src={Serena} alt='4th profile pic' />
+            <img className={style.card} src={Serena} alt='4th profile pic' />
             
             <p>
                 
@@ -127,7 +127,7 @@ const BioScreen = () => {
                 
             <article className={style.card}>
             <h3>Kevin Pak</h3>
-            <img src={Adam} alt='5th profile pic' />
+            <img className={style.card} src={Adam} alt='5th profile pic' />
             
             <p>
                 
@@ -146,7 +146,7 @@ const BioScreen = () => {
             
             <article className={style.card}>
             <h3>Jamie Barr</h3>
-            <img src={JamieBarr} alt='6th profile pic' />
+            <img className={style.card} src={JamieBarr} alt='6th profile pic' />
             
             <p>
                 
@@ -165,7 +165,7 @@ const BioScreen = () => {
             
             <article className={style.card}>
             <h3>Chuda Rimal</h3>
-            <img src={CM_Rimal} alt='7th profile pic' />
+            <img className={style.card} src={CM_Rimal} alt='7th profile pic' />
             <FontAwesomeIcon className={style.icon} icon="fa-brands fa-github-square" 
             href="https://github.com/cmsrimsson" />
 

@@ -23,7 +23,7 @@ const ActivitiesAPI = () => {
     return (
         <div className={style.actAPI}>
             <h1>Challenge of the day</h1>
-            <img src="https://th.bing.com/th/id/R.5a01efa37e75b42c4fa4a29426169bcf?rik=uQDIffMiHKZX1Q&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f4%2fNemo-PNG-High-Quality-Image.png&ehk=0VusNzRV7IqgrHGaFiJ9ZQDuc2Lt54OjcFB0kD2oQ8I%3d&risl=&pid=ImgRaw&r=0"/>
+            <img className={style.actAPI} src="https://th.bing.com/th/id/R.5a01efa37e75b42c4fa4a29426169bcf?rik=uQDIffMiHKZX1Q&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f4%2fNemo-PNG-High-Quality-Image.png&ehk=0VusNzRV7IqgrHGaFiJ9ZQDuc2Lt54OjcFB0kD2oQ8I%3d&risl=&pid=ImgRaw&r=0"/>
             <p>Activity: <span id='activity'></span><br/></p>
             <p>Type: <span id='type'></span></p>
             <p>accesibility: <span id='accesibility'></span></p>
