@@ -4,8 +4,8 @@ import Fish from "../../components/fish";
 
 const HomeScreen = () => {
     return (
-        <div>
-            <div id="fish></div>
+        <div >
+            <h1>This is a home page</h1>
         </div>
     );
 }
