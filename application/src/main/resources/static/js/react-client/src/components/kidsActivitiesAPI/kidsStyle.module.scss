@@ -1,20 +1,32 @@
-.actAPI{
-    margin: 40px 40px;
+.body {
+    margin: 0;
+    padding: 0;
+    background-color:#00A1DE;
+    min-height: 945px;
+}
+
+.actAPI {
+    position: relative; top: 3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
-    border: blue;
-    border-style: solid;
+    // border: blue;
+    // border-style: solid;
     border-radius: 15px;
     width: 50%;
-    margin-left: 15px;
-    padding-top: 20px;
+    margin-left: 3em;
+    padding-top: 30px;
     padding-left: 50px;
     padding-right: 10px;
     padding-bottom: 30px;
-    background:white;
+    background-color: #008998;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 
+    5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 
+    5px 5px 15px 5px rgba(0,0,0,0);
 
     
 }
