@@ -2,7 +2,7 @@ import { brands, regular, solid } from '@fortawesome/fontawesome-svg-core/import
 
 import Adam from '../../assets/Adam.jpg';
 import CM_Rimal from '../../assets/CM Rimal.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import JamieBarr from '../../assets/JamieBarr.jpg';
 import Joe from '../../assets/Joe.png';
 import React from "react";
@@ -30,8 +30,8 @@ const BioScreen = () => {
 
             <FontAwesomeIcon className={style.icon} icon="fa fa-linkedin-square" 
             href="https://linkedin.com/in/adam-ackley78" />
-            
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+{/*             
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> */}
                  
                  <p>
                 
