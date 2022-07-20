@@ -4,19 +4,16 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    background-color:#00A1DE;
 
 }
 
 .row {
     max-width: 1400px;
-    // height: 700px;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     background-color: #008998;
     border-radius: 12px;
-    margin-top: 2em;
-    margin: 2em 2em;
+    margin: 1.5em 1.5em;
     padding: 1em;
 
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 
@@ -29,11 +26,10 @@
 
 .card {
     display: flex;
-    // flex: 0 0 300px;
+    flex: 0 0 300px;
     flex-direction: column;
     align-items: center;
     width: 300px;
-    margin-top: 2em;
     background-color: #008998;
     margin: 1em 1em 1em 1em;
 
@@ -42,35 +38,25 @@
 }
 
 .row img {
-    // margin: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
     border-radius: 12px;
     padding: 0;
-    // position: absolute;
     width: 300px;
     height: 360px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    
+
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 
     5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 
     5px 5px 15px 5px rgba(0,0,0,0);
 
 }
-.blurb {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #00A1DE;
+.row p {
+    font-family:'FontAwesome', sans-serif;
     line-height: 1.618em;
     padding: 1em;
     font-size: 16px;
     border-radius: 12px; 
-    width: 300px;
-    height: 500px;
-    
-    // height: 800px;
+    width: 260px;
     color: white;
 
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 
@@ -88,13 +74,5 @@
 
 h3 {
     color: white;
-    background-color: #00A1DE;
-    padding: .5em;
-    border-radius: 12px; 
     font-size:24px;
-
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 
-    5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 
-    5px 5px 15px 5px rgba(0,0,0,0);
 }
