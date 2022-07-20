@@ -32,7 +32,7 @@ const BioScreen = () => {
 
             <a className={style.icon} 
             href="https://linkedin.com/in/adam-ackley78">Linkedin</a> */}
-                             
+        
             <p className={style.blurb}>
                 
             I am currently enrolled at We Can Code IT 

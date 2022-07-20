@@ -8,7 +8,7 @@ const Header = () => {
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"></link>
 
-      <h1>JAC Enterprises</h1>
+      <h1 className={style.title}>JAC Enterprises</h1>
       <ul className={style.navList}>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/bios'>Bios</NavLink>

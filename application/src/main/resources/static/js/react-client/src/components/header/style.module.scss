@@ -16,7 +16,16 @@
     padding-top: 10px;
     background-color: white;
     color:rgb(38, 30, 86);
-    font-family: "Audiowide", sans-serif;
+    // font-family: "Audiowide", sans-serif;
+}
+
+.title {
+    position: fixed;
+    display:flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    // font-family: "Audiowide", sans-serif;
+
 }
 
 .navList a{
