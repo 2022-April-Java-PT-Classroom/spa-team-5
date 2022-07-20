@@ -8,6 +8,7 @@ import Joe from '../../assets/Joe.png';
 import React from "react";
 import SamHeroPic from '../../assets/SamHeroPic.jpg';
 import Serena from '../../assets/Serena.JPG';
+import SithLord from '../../assets/SithLord.jpg';
 import style from "./style.module.scss";
 
 const BioScreen = () => {
@@ -127,7 +128,7 @@ const BioScreen = () => {
                 
             <article className={style.card}>
             <h3>Kevin Pak</h3>
-            <img className={style.card} src={Adam} alt='5th profile pic' />
+            <img className={style.card} src={SithLord} alt='5th profile pic' />
             
             <p>
                 
