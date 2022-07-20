@@ -10,8 +10,7 @@ import style from "./style.module.scss";
 
 const BioScreen = () => {
     return (
-    
-            
+          
     <div className={style.BioScreen} >
        
        
@@ -33,9 +32,7 @@ const BioScreen = () => {
 
             <a className={style.icon} 
             href="https://linkedin.com/in/adam-ackley78">Linkedin</a> */}
-
-            
-                             
+        
             <p className={style.blurb}>
                 
             I am currently enrolled at We Can Code IT 
@@ -51,7 +48,8 @@ const BioScreen = () => {
             have great interest in computer hardware and remote 
             control cars.
                 
-                </p>
+            </p>
+            
             </article>
                  
             <article className={style.card}>
