@@ -51,7 +51,8 @@ const BioScreen = () => {
             have great interest in computer hardware and remote 
             control cars.
                 
-                </p>
+            </p>
+            
             </article>
                  
             <article className={style.card}>
