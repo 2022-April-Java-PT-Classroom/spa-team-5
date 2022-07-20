@@ -36,6 +36,5 @@ public class ArtCollection {
         this.image = image;
     }
 
-    public void save(ArtCollection art1) {
-    }
+
 }
