@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 
 import axios from 'axios';
-import style from './style.module.scss'
+import style from './style.module.scss';
 
-const Scores = ({ users }) => {
+const Scores = ({ users, setCurrentUsers }) => {
 
     const [scoresState, setScoresState] = useState(users);
 
@@ -13,11 +13,27 @@ const Scores = ({ users }) => {
         userScore: ""
     });
 
-    const handleChange = (e) => {
+    const handleNameChange = (e) => {
         const value = e.target.value;
         setScoreState({
             ...scoreState,
-            [e.target.value]: value
+            [e.target.name]: value
+        });
+    };
+
+    const handleCountryChange = (e) => {
+        const value = e.target.value;
+        setScoreState({
+            ...scoreState,
+            [e.target.name]: value
+        });
+    };
+
+    const handleScoreChange = (e) => {
+        const value = e.target.value;
+        setScoreState({
+            ...scoreState,
+            [e.target.name]: value
         });
     };
 
@@ -34,6 +50,7 @@ const Scores = ({ users }) => {
             console.log(response.status);
             console.log('DATA', response.data);
             setScoresState(response.data);
+            setCurrentUsers(response.data);
         });
     };
 
@@ -60,15 +77,29 @@ const Scores = ({ users }) => {
 
     return (
         <div className={style.userForm}>
-            <form onSumbit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    name="name"
+                    name="userName"
                     value={scoreState.name}
-                    onChange={handleChange}
-                    placeholder='Enter name/country/score of user'
-                    />
-                    <button type="submit">Add User</button>
+                    onChange={handleNameChange}
+                    placeholder='Enter name'
+                />
+                <input
+                    type="text"
+                    name="userCountry"
+                    value={scoreState.country}
+                    onChange={handleCountryChange}
+                    placeholder='Enter country'
+                />
+                <input
+                    type="number"
+                    name="userScore"
+                    value={scoreState.score}
+                    onChange={handleScoreChange}
+                    placeholder='Enter score'
+                />
+                <button type="submit">Submit Score</button>
             </form>
             <h3>All Users</h3>
             <div className={style.usersContainer}>
