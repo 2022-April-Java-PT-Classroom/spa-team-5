@@ -8,7 +8,7 @@
 }
 
 .header {
-    background-color: red;
+    background-color: #008998;
     display:flex; 
     justify-content: center;
     align-items: center;
@@ -25,7 +25,8 @@
 
 }
 h1 {
-    background-color: red;
+    background-color: #008998;
+    color: white;
     display:flex; 
     justify-content: center;
     align-items: center;
@@ -34,11 +35,14 @@ h1 {
 }
 
 .navList a{
+    color: white;
     list-style: none;
     display: inline-block;
-    margin:40px; 
+    margin:40px;
+    margin-left: 3em; 
     position: relative;
     text-decoration: none;
+    font-size: 30px;
     // text-transform: uppercase;
     
 }

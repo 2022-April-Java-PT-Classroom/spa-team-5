@@ -1,11 +1,11 @@
-import Adam from '../../assets/Adam.jpg';
-import CM_Rimal from '../../assets/CM Rimal.jpg';
-import JamieBarr from '../../assets/JamieBarr.jpg';
-import Joe from '../../assets/Joe.png';
+import Adam from '../../assets/images/Adam.jpg';
+import CM_Rimal from '../../assets/images/CM Rimal.jpg';
+import JamieBarr from '../../assets/images/JamieBarr.jpg';
+import Joe from '../../assets/images/Joe.png';
 import React from "react";
-import SamHeroPic from '../../assets/SamHeroPic.jpg';
-import Serena from '../../assets/Serena.JPG';
-import SithLord from '../../assets/SithLord.jpg';
+import SamHeroPic from '../../assets/images/SamHeroPic.jpg';
+import Serena from '../../assets/images/Serena.JPG';
+import SithLord from '../../assets/images/SithLord.jpg';
 import style from "./bioStyle.module.scss";
 
 const BioScreen = () => {
@@ -13,7 +13,8 @@ const BioScreen = () => {
           
     <div className={style.BioScreen} >
        
-       
+      
+      
             <section className={style.row}>
                 
             <article className={style.card}>

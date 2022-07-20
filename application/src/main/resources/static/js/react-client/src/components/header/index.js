@@ -5,6 +5,7 @@ import style from './headerStyle.module.scss';
 const Header = () => {
   return (
     <header className={style.header}>
+      {/* <div className={style.section}> */}
       <title className={style.title}>
       <h1 className={style.title}>JAC Enterprises</h1>
       </title>
@@ -19,7 +20,7 @@ const Header = () => {
           <NavLink to='/contact'>Contact</NavLink>
       </ul>
       </nav>
-   
+   {/* </div> */}
       </header>
   );
 }
