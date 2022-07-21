@@ -21,7 +21,9 @@
     grid-template-columns: repeat(3, 1fr);
 
     & p{
-        margin: 2px;
+        margin: 1em 1em 1em 1em;
+        color: white;
+        font-size: 20px;
     }
 }
 
@@ -34,4 +36,14 @@
 
 .selected {
     text-decoration: line-through;
+}
+.h3 {
+        display:flex; 
+        justify-content: center;
+        align-items: center;
+        padding: .5em .5em .5em .5em;
+        height: 2em;
+        margin-top: auto;
+        background-color: #008998;
+        font-size: 24px;
 }

@@ -76,6 +76,7 @@ const Scores = ({ users, setCurrentUsers }) => {
     }
 
     return (
+        
         <div className={style.userForm}>
             <form onSubmit={handleSubmit}>
                 <input
@@ -101,7 +102,7 @@ const Scores = ({ users, setCurrentUsers }) => {
                 />
                 <button type="submit">Submit Score</button>
             </form>
-            <h3>All Users</h3>
+            <h3 className={style.h3}>All Users</h3>
             <div className={style.usersContainer}>
                 {scoresState.map(user => (
                     <div className={style.userContainer} key={user.id}>
@@ -110,6 +111,7 @@ const Scores = ({ users, setCurrentUsers }) => {
                 ))}
             </div>
         </div>
+        
     );
 
 }

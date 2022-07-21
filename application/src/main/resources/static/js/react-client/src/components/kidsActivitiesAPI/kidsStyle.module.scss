@@ -1,22 +1,29 @@
 .actAPI{
-    margin: 40px 40px;
+    margin-top: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    border: blue;
-    border-style: solid;
+    font-weight: 500;
+    color: white;
+    // display: flex;
+    // flex-direction: column;
+    // border: blue;
+    // border-style: solid;
     border-radius: 15px;
     width: 50%;
-    margin-left: 15px;
+    min-height: 300px;
+    
+    margin-left: 3em;
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 10px;
     padding-bottom: 30px;
-    background:white;
+    background-color: #008998;
+    position: relative; top: 3em;
 
-    
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 
+    5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 
+    5px 5px 15px 5px rgba(0,0,0,0);
+      
 }
 
 .actAPI img{
