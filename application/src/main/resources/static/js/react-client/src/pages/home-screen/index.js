@@ -32,7 +32,7 @@ const HomeScreen = () => {
     let winningX = randomIntBetween(0,4);
     let winningY = randomIntBetween(0,3);
 
-return <div>
+return <div className={style.game}>
         {loadingTileImages ? <h3>Loading ...</h3> : <GameField rows = {3} cols = {4} image = {tileImages.image} winningX = {winningX} winningY = {winningY}/>}
        </div>
 }
