@@ -1,0 +1,23 @@
+.body {
+    margin: 0;
+    padding: 0;
+    min-height: 945px;
+    width: 100%;
+    background-color: #00A1DE;
+}
+.h3 {
+   
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    padding: .5em .5em .5em .5em;
+    height: 2em;
+    margin-top: auto;
+    background-color: #008998;
+    font-size: 24px;
+}
+.p {
+    margin: 1em 1em 1em 1em;
+    color: white;
+    font-size: 20px;
+}

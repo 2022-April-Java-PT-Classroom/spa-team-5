@@ -45,7 +45,7 @@ const ScoresScreen = () => {
     
     
     return (
-        <div>
+        <body className={style.body}>
             <div className={style.form__container}>
                 <section className={style.userList}>
                     {loadingUsers ? <h3>Loading . . .</h3> :
@@ -55,19 +55,20 @@ const ScoresScreen = () => {
             </div>
             {loadingCurrentUsers ? <h3>Loading . . .</h3> :
                 <>
-                    <h2>Here are our Current High Scores</h2>
+                    <h3 className={style.h3}>Here are our Current High Scores</h3>
                      <ul>
                         {currentUsers.map(currentUser => (
                             <div key={currentUser.id}>
-                                <p>{currentUser.name}</p>
-                                <p>{currentUser.country}</p>
-                                <p>{currentUser.score}</p>
+                                <p className={style.p}>{currentUser.name}</p>
+                                <p className={style.p}>{currentUser.country}</p>
+                                <p className={style.p}>{currentUser.score}</p>
                             </div>
                         ))}
                     </ul>
                 </>
             }
-        </div>
+        </body>
+        
     );
 }
 
