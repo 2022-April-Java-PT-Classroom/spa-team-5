@@ -16,15 +16,12 @@ const ActivitiesAPI = () => {
         document.getElementById('participants').textContent = participants;
         document.getElementById('price').textContent = price;
         document.getElementById('link').textContent = link;
-        <div className={style.body}>
-            </div>
+      
 
     }
     getCollection();
     return (
-        <body className={style.body}>
-        <div className={style.body}>
-            <section className={style.actAPI}>
+        <div className={style.actAPI}>
             <h1>Challenge of the day</h1>
             <img src="https://th.bing.com/th/id/R.5a01efa37e75b42c4fa4a29426169bcf?rik=uQDIffMiHKZX1Q&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f4%2fNemo-PNG-High-Quality-Image.png&ehk=0VusNzRV7IqgrHGaFiJ9ZQDuc2Lt54OjcFB0kD2oQ8I%3d&risl=&pid=ImgRaw&r=0"/>
             <p>Activity: <span id='activity'></span><br/></p>
@@ -33,10 +30,8 @@ const ActivitiesAPI = () => {
             <p>participants: <span id='participants'></span></p>
             <p>Price: JAC$ <span id='price'></span> </p>
             <p>Link: <span id='link'></span> </p>
-            </section>
             
         </div>
-        </body>
     )
     
 }
