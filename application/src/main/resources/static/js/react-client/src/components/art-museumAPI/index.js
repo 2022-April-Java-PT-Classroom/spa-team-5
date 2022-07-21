@@ -37,7 +37,7 @@ const ArtCollectiom = () => {
             <p>Region:  <span id='region'></span> </p>
             <p>Title:  <span id='title'></span> </p>
             <p>CreditLine:  <span id='creditLine'></span> </p>
-            <p>country:  <span id='country'></span> </p>
+            <p>Country:  <span id='country'></span> </p>
             <p>Medium:  <span id='medium'></span> </p>
             <p>ObjectDate:  <span id='objectDate'></span> </p>
             <p>PrimaryImage: <span id='primaryImage'></span></p>
