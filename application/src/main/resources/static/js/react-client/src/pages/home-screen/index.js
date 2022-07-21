@@ -1,14 +1,12 @@
 import React from "react";
+import GameField from "../../components/gameField";
+import GameRow from "../../components/gameRow";
+import GameTile from "../../components/gameTile";
 import style from './homeStyle.module.scss';
 
 const HomeScreen = () => {
-    return (
-        <div className={style.body}>
-            
-            <h1>This is a home page</h1>
-            
-        </div>
-    );
+
+return <GameField />;
 }
 
 export default HomeScreen;
