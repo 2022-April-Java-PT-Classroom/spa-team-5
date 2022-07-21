@@ -4,8 +4,14 @@ import style from './gameFieldStyle.module.scss';
 
 const GameField = (props) => {
     const gameField = [];
+    console.log(props.winningX + " " + props.winningY);
         for (let i = 0; i < props.rows; i++){
-            gameField[i] = GameRow(props.cols, i);
+            if ( i === props.winningY){
+                gameField[i] = GameRow(props.cols, i, props.image, true, props.winningX);
+            } else{
+                gameField[i] = GameRow(props.cols, i, props.image, false);
+            }
+            
         }
 
     return gameField;
