@@ -12,12 +12,16 @@ export default function App() {
   // }, []);
 
   return (
+    
     <body className={style.body}>
+      
     <div className={style.booksStyle}>
+      
       {/* <h1>Harvard Library Recomendations</h1> */}
       {/* {collections.map((collection) => (
         <div key={collection.systemId}>{collection.setName}</div> */}
       {/* ))} */}
+
     </div>
     </body>
   );
