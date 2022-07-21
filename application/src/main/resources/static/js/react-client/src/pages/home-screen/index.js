@@ -6,7 +6,7 @@ import style from './homeStyle.module.scss';
 
 const HomeScreen = () => {
 
-return <GameField />;
+return <GameField rows = {4} cols = {4}/>;
 }
 
 export default HomeScreen;
