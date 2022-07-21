@@ -1,4 +1,4 @@
-function randomIntBetween(min, max) {
+function RandomIntBetween(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-export default randomIntBetween;
+export default RandomIntBetween;
