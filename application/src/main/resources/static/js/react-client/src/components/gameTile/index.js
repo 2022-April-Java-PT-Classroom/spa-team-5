@@ -8,11 +8,11 @@ const GameTile = (index, imageURL, isWinningTile) => {
     let tile;
     if (isWinningTile){
         tile = <img key={index} src={altIMage} onClick={()=>{
-            window.open('/');
+            window.location = '/';
         }}/>
     } else {
         tile = <img key={index} src={image} onClick={()=>{
-            window.open('/scores');
+            window.location = '/scores';
         }}/>
     }
 
