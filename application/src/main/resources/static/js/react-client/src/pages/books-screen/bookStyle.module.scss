@@ -1,6 +1,8 @@
 .booksStyle{
     background-color:var(--LigherBlue);
     min-height: 945px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
