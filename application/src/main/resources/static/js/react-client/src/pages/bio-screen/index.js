@@ -178,15 +178,10 @@ const BioScreen = () => {
             
             <p className={style.blurb}>
                 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Cras eleifend ultricies turpis a dignissim. Donec sit 
-            amet accumsan orci. Fusce et magna facilisis nibh vestibulum 
-            pretium vitae id augue. Etiam at viverra orci. Praesent rutrum
-            purus nec faucibus varius. Praesent est erat, rutrum eget
-            dictum vitae, mattis eget leo. Integer dictum ultrices blandit.
-            Aliquam sed ipsum viverra, molestie metus quis, elementum ex.
-            Aenean scelerisque sodales bibendum. Aliquam rutrum euismod
-            eros ut pellentesque. Duis scelerisque convallis sagittis. 
+            I'm an entry level Full Stack java developer, attending We Can Code
+            IT software development bootcamp in 2022. I also have 15 years experience 
+            in Youth Development and Non-profits working with the Boys & Girls Clubs. 
+            <br></br><br></br> Coding Skills include: Java, JavaScript, React, Spring MVC, Thymeleaf, CSS, HTML.
             
             </p>
             
