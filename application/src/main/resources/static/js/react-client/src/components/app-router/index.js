@@ -7,6 +7,7 @@ import HomeScreen from "../../pages/home-screen";
 import React from "react";
 import ScoresScreen from "../../pages/scores-screen";
 import Game from "../game/game";
+import ArtCollection from "../art-museumAPI";
 
 const PageSwitch = () => {
     return (
@@ -17,6 +18,7 @@ const PageSwitch = () => {
             <Route exact path={'/scores/:score?'} component={ScoresScreen} />
             <Route exact path={'/contact'} component={ContactScreen} />
             <Route exact path={'/books'} component={BooksScreen} />
+            <Route exact path={'/art'} component = {ArtCollection}/>
         </Switch>
     );
 }
