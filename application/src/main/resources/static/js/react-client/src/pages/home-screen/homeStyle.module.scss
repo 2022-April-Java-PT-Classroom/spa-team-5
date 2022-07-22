@@ -1,13 +1,16 @@
 .body{
     
-    display: flex;
+    display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
     background-color:#00A1DE;
-    height: 100%;
+    // height: 100%;
     width: 100%;
-    min-height: 945px;
+    min-height: 1245px;
     bottom: 0;
+    
+
 }

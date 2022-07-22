@@ -27,23 +27,26 @@ const ArtCollectiom = () => {
     }
     getObject();
     return (
+        <body className={style.body}>
         <div className={style.art}>
-            <h1>Art of the day</h1>
-            <img src="https://images.metmuseum.org/CRDImages/ad/original/DT241732.jpg"/>
-            <p>ObjectID: <span id='objectID'></span></p>
-            <p>ObjectName: <span id='objectName'></span></p>
-            <p>AccessionYear: <span id='accessionYear'></span></p>
-            <p>Department: <span id='department'></span></p>
-            <p>Region:  <span id='region'></span> </p>
-            <p>Title:  <span id='title'></span> </p>
-            <p>CreditLine:  <span id='creditLine'></span> </p>
-            <p>Country:  <span id='country'></span> </p>
-            <p>Medium:  <span id='medium'></span> </p>
-            <p>ObjectDate:  <span id='objectDate'></span> </p>
-            <p>PrimaryImage: <span id='primaryImage'></span></p>
-            <p>ObjectURL: <span id='objectURL'></span></p>
-            
+            <h1 className={style.h1}>Art of the day</h1>
+            <img className={style.img} src="https://images.metmuseum.org/CRDImages/ad/original/DT241732.jpg"/>
+            <section className={style.p}>
+            <p className={style.p}>ObjectID: <span id='objectID'></span></p>
+            <p className={style.p}>ObjectName: <span id='objectName'></span></p>
+            <p className={style.p}>AccessionYear: <span id='accessionYear'></span></p>
+            <p className={style.p}>Department: <span id='department'></span></p>
+            <p className={style.p}>Region:  <span id='region'></span> </p>
+            <p className={style.p}>Title:  <span id='title'></span> </p>
+            <p className={style.p}>CreditLine:  <span id='creditLine'></span> </p>
+            <p className={style.p}>Country:  <span id='country'></span> </p>
+            <p className={style.p}>Medium:  <span id='medium'></span> </p>
+            <p className={style.p}>ObjectDate:  <span id='objectDate'></span> </p>
+            <p className={style.p}>PrimaryImage: <span id='primaryImage'></span></p>
+            <p className={style.p}>ObjectURL: <span id='objectURL'></span></p>
+            </section>
         </div>
+        </body>
     )
     
 }
