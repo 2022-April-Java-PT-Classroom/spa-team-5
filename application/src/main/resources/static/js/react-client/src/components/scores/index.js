@@ -5,7 +5,7 @@ import style from './scoresApiStyle.module.scss';
 
 const Scores = ({ users, setCurrentUsers, currentScore }) => {
 
-    const [scoresState, setScoresState] = useState(users);
+    const [scoresState, setScoresState] = useState(users); 
 
     const [scoreState, setScoreState] = useState({
         userName: "",
@@ -38,12 +38,21 @@ const Scores = ({ users, setCurrentUsers, currentScore }) => {
             score: currentScore
         };
 
-        axios.post('http://localhost:8080/api/users/add-user', userData).then((response) => {
-            console.log(response.status);
-            console.log('DATA', response.data);
-            setScoresState(response.data);
-            setCurrentUsers(response.data);
+        if (currentScore != 0 && scoreState.userName !== '' && scoreState.userCountry !== ''){
+            axios.post('http://localhost:8080/api/users/add-user', userData).then((response) => {
+                console.log(response.status);
+                console.log('DATA', response.data);
+                setScoresState(response.data);
+                setCurrentUsers(response.data);
+                window.location = '/scores';
+            });
+        }
+
+        setScoreState({
+            ...scoreState,
+            [e.target.name]: 0
         });
+
     };
 
     const handleDelete = (userId) => {
