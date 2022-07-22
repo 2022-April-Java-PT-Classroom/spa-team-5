@@ -3,14 +3,14 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import style from './scoresApiStyle.module.scss';
 
-const Scores = ({ users, setCurrentUsers }) => {
+const Scores = ({ users, setCurrentUsers, currentScore }) => {
 
     const [scoresState, setScoresState] = useState(users);
 
     const [scoreState, setScoreState] = useState({
         userName: "",
         userCountry: "",
-        userScore: ""
+        userScore: currentScore
     });
 
     const handleNameChange = (e) => {

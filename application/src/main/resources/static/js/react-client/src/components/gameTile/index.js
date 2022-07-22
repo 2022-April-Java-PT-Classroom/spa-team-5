@@ -8,11 +8,11 @@ const GameTile = (index, imageURL, isWinningTile, score) => {
     const newScore = parseInt(score)+1000;
     if (isWinningTile){
         tile = <img key={index} src={altIMage} onClick={()=>{
-            window.location = '/game/' + (newScore);
+            window.location = '/game/' + newScore;
         }}/>
     } else {
         tile = <img key={index} src={image} onClick={()=>{
-            window.location = '/scores';
+            window.location = '/scores/' + newScore;
         }}/>
     }
 

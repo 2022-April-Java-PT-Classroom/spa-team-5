@@ -14,7 +14,7 @@ const PageSwitch = () => {
             <Route exact path={'/'} component={HomeScreen} />
             <Route exact path={'/game/:score?'} component={Game} />
             <Route exact path={'/bios'} component={BioScreen} />
-            <Route exact path={'/scores'} component={ScoresScreen} />
+            <Route exact path={'/scores/:score?'} component={ScoresScreen} />
             <Route exact path={'/contact'} component={ContactScreen} />
             <Route exact path={'/books'} component={BooksScreen} />
         </Switch>
