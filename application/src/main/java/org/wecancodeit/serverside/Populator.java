@@ -21,6 +21,13 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+        GameTile gameTile = new GameTile("OrangeStripedFish", 1);
+        gameTileRepository.save(gameTile);
+        gameTile = new GameTile("BirdsTree", 3);
+        gameTileRepository.save(gameTile);
+        gameTile = new GameTile("TwoTreeIsland", 2);
+        gameTileRepository.save(gameTile);
+
 
         UserName joe = new UserName("Joe","America", 35542);
         userNameRepository.save(joe);
@@ -28,8 +35,5 @@ public class Populator implements CommandLineRunner {
         userNameRepository.save(adam);
         UserName sam = new UserName("Sam","America", 45232);
         userNameRepository.save(sam);
-
-        GameTile gameTile = new GameTile("BirdsTree", 3);
-        gameTileRepository.save(gameTile);
     }
 }

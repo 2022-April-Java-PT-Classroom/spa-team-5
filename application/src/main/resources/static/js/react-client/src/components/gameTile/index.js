@@ -10,17 +10,20 @@ import islandImage from '../../assets/GameTiles/TwoTreeIsland/TwoTreeIsland.png'
 import islandImage0 from '../../assets/GameTiles/TwoTreeIsland/TwoTreeIsland0.png';
 import islandImage1 from '../../assets/GameTiles/TwoTreeIsland/TwoTreeIsland1.png';
 
-const GameTile = (index, imageURL, isWinningTile, score) => {
+const GameTile = (index, image, altImage, isWinningTile, score) => {
     let tile;
     const newScore = parseInt(score);
     const images = [[fishImage, fishImage0], [birdsImage, birdsImage0, birdsImage1, birdsImage2], [islandImage, islandImage0, islandImage1]];
 
+    const tileType = parseInt(image) - 1;
+    const altType = parseInt(altImage) + 1;
+
     if (isWinningTile){
-        tile = <img key={index} src={images[0][1]} onClick={()=>{
+        tile = <img key={index} src={images[tileType][altType]} onClick={()=>{
             window.location = '/game/' + (newScore + 1000);
         }}/>
     } else {
-        tile = <img key={index} src={images[0][0]} onClick={()=>{
+        tile = <img key={index} src={images[tileType][0]} onClick={()=>{
             window.location = '/scores/' + newScore;
         }}/>
     }
