@@ -27,11 +27,9 @@ const HomeScreen = () => {
     }, [tileImages]);
 
    
-return  <body className={style.filler}>
-        <div className={style.game}>
+return <div className={style.game}>
         {loadingTileImages ? <h3>Loading ...</h3> : <Game image = {tileImages.image}/>}
        </div>
-       </body>
 }
 
 export default HomeScreen;
