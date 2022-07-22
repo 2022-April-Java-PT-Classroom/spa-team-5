@@ -27,6 +27,10 @@ public class Populator implements CommandLineRunner {
         gameTileRepository.save(gameTile);
         gameTile = new GameTile("TwoTreeIsland", 2);
         gameTileRepository.save(gameTile);
+        gameTile = new GameTile("Cave", 3);
+        gameTileRepository.save(gameTile);
+        gameTile = new GameTile("Octopus", 3);
+        gameTileRepository.save(gameTile);
 
 
         UserName joe = new UserName("Joe","America", 35542);

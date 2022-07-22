@@ -9,11 +9,20 @@ import birdsImage2 from '../../assets/GameTiles/BirdsTree/BirdsTree2.png';
 import islandImage from '../../assets/GameTiles/TwoTreeIsland/TwoTreeIsland.png';
 import islandImage0 from '../../assets/GameTiles/TwoTreeIsland/TwoTreeIsland0.png';
 import islandImage1 from '../../assets/GameTiles/TwoTreeIsland/TwoTreeIsland1.png';
+import caveImage from '../../assets/GameTiles/Cave/Cave.png';
+import caveImage0 from '../../assets/GameTiles/Cave/Cave0.png';
+import caveImage1 from '../../assets/GameTiles/Cave/Cave1.png';
+import caveImage2 from '../../assets/GameTiles/Cave/Cave2.png';
+import octopusImage from '../../assets/GameTiles/Octopus/Octopus.png';
+import octopusImage0 from '../../assets/GameTiles/Octopus/Octopus0.png';
+import octopusImage1 from '../../assets/GameTiles/Octopus/Octopus1.png';
+import octopusImage2 from '../../assets/GameTiles/Octopus/Octopus2.png';
+
 
 const GameTile = (index, image, altImage, isWinningTile, score) => {
     let tile;
     const newScore = parseInt(score);
-    const images = [[fishImage, fishImage0], [birdsImage, birdsImage0, birdsImage1, birdsImage2], [islandImage, islandImage0, islandImage1]];
+    const images = [[fishImage, fishImage0], [birdsImage, birdsImage0, birdsImage1, birdsImage2], [islandImage, islandImage0, islandImage1], [caveImage, caveImage0, caveImage1, caveImage2], [octopusImage, octopusImage0, octopusImage1, octopusImage2]];
 
     const tileType = parseInt(image) - 1;
     const altType = parseInt(altImage) + 1;
