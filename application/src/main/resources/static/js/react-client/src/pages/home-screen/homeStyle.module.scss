@@ -1,4 +1,4 @@
-.body{
+.filler{
     
     display:flex;
     flex-direction: column;
@@ -6,10 +6,11 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    background-color:#00A1DE;
+    background: url('../../assets/images/oceankids.jpg');
+    // background-color:#00A1DE;
     // height: 100%;
     width: 100%;
-    min-height: 1245px;
+    min-height: 945px;
     bottom: 0;
     
 

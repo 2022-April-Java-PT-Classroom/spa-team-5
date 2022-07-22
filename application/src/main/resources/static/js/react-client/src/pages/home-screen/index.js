@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import Axios from 'axios';
-import style from './homeStyle.module.scss';
 import Game from "../../components/game/game";
+import style from './homeStyle.module.scss';
 
 const HomeScreen = () => {
 
@@ -19,7 +19,6 @@ const HomeScreen = () => {
         setLoadingTileImages(false);
     }
 
-    
         const timer = setTimeout(() => {
             !tileImages && fetchData();
         }, 1000);
@@ -27,9 +26,12 @@ const HomeScreen = () => {
 
     }, [tileImages]);
 
-return <div className={style.game}>
+   
+return  <body className={style.filler}>
+        <div className={style.game}>
         {loadingTileImages ? <h3>Loading ...</h3> : <Game image = {tileImages.image}/>}
        </div>
+       </body>
 }
 
 export default HomeScreen;
