@@ -12,9 +12,19 @@
 
     & button {
         border-radius: 4px;
+        margin: 2px 15px 10px;
+    }
+
+    & button:hover{
+        background-color: lightgreen;
     }
 }
 
+.scoreDisplay{
+    color: white;
+    font-size: 20px;
+    margin: 0px 15px; 
+}
 
 .usersContainer {
     display: grid;

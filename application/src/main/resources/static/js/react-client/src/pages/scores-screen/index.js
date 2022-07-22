@@ -11,7 +11,7 @@ const ScoresScreen = () => {
     if (score){
         score = parseInt(score);
     }else {
-        score = ""
+        score = 0;
     }
 
     const [loadingUsers, setLoadingUsers] = useState(true),

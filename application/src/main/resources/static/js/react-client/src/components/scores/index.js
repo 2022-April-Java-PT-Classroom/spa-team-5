@@ -10,7 +10,7 @@ const Scores = ({ users, setCurrentUsers, currentScore }) => {
     const [scoreState, setScoreState] = useState({
         userName: "",
         userCountry: "",
-        userScore: currentScore
+        userScore: ""
     });
 
     const handleNameChange = (e) => {
@@ -29,21 +29,13 @@ const Scores = ({ users, setCurrentUsers, currentScore }) => {
         });
     };
 
-    const handleScoreChange = (e) => {
-        const value = e.target.value;
-        setScoreState({
-            ...scoreState,
-            [e.target.name]: value
-        });
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
         const userData = {
             name: scoreState.userName,
             country: scoreState.userCountry,
-            score: scoreState.userScore
+            score: currentScore
         };
 
         axios.post('http://localhost:8080/api/users/add-user', userData).then((response) => {
@@ -93,13 +85,7 @@ const Scores = ({ users, setCurrentUsers, currentScore }) => {
                     onChange={handleCountryChange}
                     placeholder='Enter country'
                 />
-                <input
-                    type="number"
-                    name="userScore"
-                    value={scoreState.score}
-                    onChange={handleScoreChange}
-                    placeholder='Enter score'
-                />
+                <p className={style.scoreDisplay}>Your Score: {currentScore}</p>
                 <button type="submit">Submit Score</button>
             </form>
             <h3 className={style.h3}>All Users</h3>

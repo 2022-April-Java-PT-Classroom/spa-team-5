@@ -5,10 +5,10 @@ import altIMage from '../../assets/GameTiles/OrangeStripedFish/OrangeStripedFish
 
 const GameTile = (index, imageURL, isWinningTile, score) => {
     let tile;
-    const newScore = parseInt(score)+1000;
+    const newScore = parseInt(score);
     if (isWinningTile){
         tile = <img key={index} src={altIMage} onClick={()=>{
-            window.location = '/game/' + newScore;
+            window.location = '/game/' + (newScore + 1000);
         }}/>
     } else {
         tile = <img key={index} src={image} onClick={()=>{
