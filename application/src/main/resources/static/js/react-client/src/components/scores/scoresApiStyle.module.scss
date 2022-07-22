@@ -13,6 +13,7 @@
     & button {
         border-radius: 4px;
         margin: 2px 15px 10px;
+        padding: 2px;
     }
 
     & button:hover{
@@ -28,7 +29,7 @@
 
 .usersContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     & p{
         margin: 1em 1em 1em 1em;

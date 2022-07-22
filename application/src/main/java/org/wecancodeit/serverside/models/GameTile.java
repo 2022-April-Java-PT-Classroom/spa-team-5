@@ -24,11 +24,10 @@ public class GameTile {
     public Long getId() {return id;}
     public String getName() {return name;}
     public int getNumberOfAlts() {return numberOfAlts;}
-    public int getNumberOfImages(){return numberOfAlts + 1;}
     public String getImage(){return "/GameTiles/" + name + "/" + name + ".png";}
-    public String getRandomAltImage(){
+    public int getRandomAltImage(){
         int randAltImgNum = ThreadLocalRandom.current().nextInt(0, numberOfAlts);
-        return  "/GameTiles/" + name + "/" + name + randAltImgNum + ".png";
+        return  randAltImgNum;
     }
     public String[] getAltImages(){
         String[] altImages = new String[numberOfAlts];
@@ -36,8 +35,5 @@ public class GameTile {
             altImages[i] = "/GameTiles/" + name + "/" + name + i + ".png";
         }
         return altImages;
-    }
-    public String[] getImagePair(){
-        return new String[]{getImage(), getRandomAltImage()};
     }
 }
