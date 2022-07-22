@@ -13,7 +13,7 @@ const GameRow = (col, index, image, isWinningRow, winningCol, score) => {
         }
 
     return (
-        <div key={index}>
+        <div key={index} className={style.row}>
             {newRow}
         </div>
     );

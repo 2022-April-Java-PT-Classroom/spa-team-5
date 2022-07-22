@@ -9,13 +9,18 @@ const Game = (props) => {
      if (!score){
         score = 0;
      }
-     const winningX = randomIntBetween(0,4);
-     const winningY = randomIntBetween(0,3);
 
+     score = parseInt(score);
+
+     const cols = Math.floor(((score*2+1000)/3000 + 2));
+     const rows = Math.floor(((score + 1000)/3000 + 2)); 
+
+     const winningX = randomIntBetween(0,cols);
+     const winningY = randomIntBetween(0,rows);
 
  return <div className={style.game}>
             <h2 className={style.instructions}>Which one is not the same??</h2>
-            <GameField rows = {3} cols = {4} image = {props.image} winningX = {winningX} winningY = {winningY} score = {score}/>
+            <GameField rows = {rows} cols = {cols} image = {props.image} winningX = {winningX} winningY = {winningY} score = {score}/>
         </div>
         
    
