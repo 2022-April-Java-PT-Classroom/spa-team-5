@@ -14,6 +14,7 @@ const Game = (props) => {
      const winningY = randomIntBetween(0,3);
 
  return <div className={style.game}>
+            <h2 className={style.instructions}>Which one is not the same??</h2>
             <GameField rows = {3} cols = {4} image = {props.image} winningX = {winningX} winningY = {winningY} score = {score}/>
         </div>
  }

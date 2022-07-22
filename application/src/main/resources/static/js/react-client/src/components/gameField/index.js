@@ -13,7 +13,9 @@ const GameField = (props) => {
             
         }
 
-    return gameField;
+    return <div className={style.gameGrid}>
+        {gameField}
+        </div>;
 }
 
 export default GameField;
