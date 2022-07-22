@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import Axios from 'axios';
-import GameField from "../../components/gameField";
 import style from './homeStyle.module.scss';
-import randomIntBetween from "../../util/randomIntBetween";
+import Game from "../../components/game/game";
 
 const HomeScreen = () => {
 
@@ -28,12 +27,8 @@ const HomeScreen = () => {
 
     }, [tileImages]);
 
-   
-    let winningX = randomIntBetween(0,4);
-    let winningY = randomIntBetween(0,3);
-
 return <div className={style.game}>
-        {loadingTileImages ? <h3>Loading ...</h3> : <GameField rows = {3} cols = {4} image = {tileImages.image} winningX = {winningX} winningY = {winningY}/>}
+        {loadingTileImages ? <h3>Loading ...</h3> : <Game image = {tileImages.image}/>}
        </div>
 }
 

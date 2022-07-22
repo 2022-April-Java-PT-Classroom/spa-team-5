@@ -6,9 +6,9 @@ const GameField = (props) => {
     const gameField = [];
         for (let i = 0; i < props.rows; i++){
             if ( i === props.winningY){
-                gameField[i] = GameRow(props.cols, i, props.image, true, props.winningX);
+                gameField[i] = GameRow(props.cols, i, props.image, true, props.winningX, props.score);
             } else{
-                gameField[i] = GameRow(props.cols, i, props.image, false);
+                gameField[i] = GameRow(props.cols, i, props.image, false, 0, props.score);
             }
             
         }
