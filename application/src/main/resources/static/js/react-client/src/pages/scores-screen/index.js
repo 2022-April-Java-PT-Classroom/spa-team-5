@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 import Axios from 'axios';
 import Scores from '../../components/scores';
 import style from './scoresStyle.module.scss';
 
 const ScoresScreen = () => {
+
+    let {score} = useParams();
+    if (score){
+        score = parseInt(score);
+    }else {
+        score = 0;
+    }
 
     const [loadingUsers, setLoadingUsers] = useState(true),
         [users, setUsers] = useState(null),
@@ -49,7 +57,7 @@ const ScoresScreen = () => {
             <div className={style.form__container}>
                 <section className={style.userList}>
                     {loadingUsers ? <h3>Loading . . .</h3> :
-                        <Scores users={users} setCurrentUsers={setCurrentUsers} />
+                        <Scores users={users} setCurrentUsers={setCurrentUsers} currentScore={score}/>
                     }
                 </section>
             </div>
@@ -59,9 +67,11 @@ const ScoresScreen = () => {
                      <ul>
                         {currentUsers.map(currentUser => (
                             <div key={currentUser.id}>
-                                <p className={style.p}>{currentUser.name}</p>
-                                <p className={style.p}>{currentUser.country}</p>
-                                <p className={style.p}>{currentUser.score}</p>
+                                <p className={style.p}>
+                                    <span>{currentUser.name} </span>
+                                    <span>({currentUser.country}): </span>
+                                    <span>{currentUser.score} points</span>
+                                </p>    
                             </div>
                         ))}
                     </ul>

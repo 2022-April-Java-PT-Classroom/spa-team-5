@@ -2,7 +2,9 @@ package org.wecancodeit.serverside;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.wecancodeit.serverside.models.GameTile;
 import org.wecancodeit.serverside.models.UserName;
+import org.wecancodeit.serverside.repositories.GameTileRepository;
 import org.wecancodeit.serverside.repositories.UserNameRepository;
 
 import javax.annotation.Resource;
@@ -12,6 +14,9 @@ public class Populator implements CommandLineRunner {
 
     @Resource
     private UserNameRepository userNameRepository;
+
+    @Resource
+    private GameTileRepository gameTileRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -24,5 +29,7 @@ public class Populator implements CommandLineRunner {
         UserName sam = new UserName("Sam","America", 45232);
         userNameRepository.save(sam);
 
+        GameTile gameTile = new GameTile("BirdsTree", 3);
+        gameTileRepository.save(gameTile);
     }
 }
